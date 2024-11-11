@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到三傻的网页</title>
+    <link rel="icon" href="ps/biao.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        /*对网页进行第二次修饰*/
+        body{font-size: 12px;}
+        /*对整个标签,和表格 设置宽度为990像素*/
+        #discuss,#discuss-datas{
+            width: 1000px;
+        }
+        #discuss div.mt{
+            /*高度,边框,背景*/
+            height: 40px;
+            border: 1px solid #DDDDDD;
+            border-top: 2px solid #999999;
+            background: #f7f7f7;
+        }
+        #discuss-content{
+            border-bottom: 1px solid #DDDDDD;
+        }
+        #discuss-datas tr.header td{
+            /*加粗 上下内边距 下边框*/
+            font-weight: bold;
+            padding: 5px 0;
+            border-bottom: 1px solid #DDDDDD;
+            color: #666666;
+        }
+        #discuss-datas td{
+            /*内容水平居中对齐*/
+            text-align: center;
+        }
+        #discuss-datas td.col1{
+            /*宽度,文本左对齐*/
+            width: 620px;
+            text-align: left;
+        }
+        #discuss-datas tbody td{
+            /*文本颜色*/
+            color: #9c9c9c;
+        }
+        #discuss a{
+            /*改链接颜色 去掉下划线*/
+            text-decoration: none;
+            color: #005aa0;
+        }
+        #discuss a:hover{
+            text-decoration: underline;
+        }
+        #discuss-datas tbody td{
+            /*上下内边距 下边框*/
+            padding: 5px 0px;
+            border-bottom: 1px dotted #DDDDDD;
+        }
+        /*给论坛内容加标签 加图标*/
+        #discuss i{
+            /*左内边距 下内边距高度 背景图*/
+            padding-left: 20px;
+            padding-bottom: 6px;
+            background:url(#) no-repeat;
+            background-size: 100%;
+        }
+        #discuss div.mt a{
+            float:left;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+        #discuss div.mt a:hover{
+            text-decoration: none;
+            color: #E4393C;
+        }
+        #discuss div.mt a.current{
+            border: 1px solid #DDDDDD;
+            border-top: 2px solid #E4393C;
+            border-bottom: 0;
+            background: #ffffff;
+            margin-top: -6px;
+            height: 35px;
+            line-height: 35px;
+            color: #E4393C;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <button class="menu">&#9776;</button>
+    <h1>三傻大闹Web</h1>
+    <nav>
+    <ul>
+        <li><a href="../Home page one/Home page one.html">首页</a></li>
+        <li><a href="https://www.sxzy.edu.cn/">学校官网</a></li>
+        <li><a href="../ps/Photo.html">相册墙</a></li>
+        <li><a href="#">我的助手</a></li>
+        <li><a href="../LoginIS/index.html">登录/注册</a></li>
+    </ul>
+    </nav>
+    </header>
+    <main>
+        <!--   第一区域   -->
+        <section class="news"></section>
+        <!--   第二区域   -->
+		<div id="discuss">
+			<!--页签菜单栏-->
+			<div class="mt">
+                 <h2>
+				网友讨论圈
+				晒单帖
+				问答帖
+				讨论帖
+                 </h2>
+			</div>
+			<!--讨论内容-->
+			<div id="discuss-content">
+				<!--表格内容-->
+				<table id="discuss-datas">
+					<!--标题栏-->
+					<tr class="header">
+						<td class="col1">主题</td>
+						<td>浏览/回复</td>
+						<td>作者</td>
+						<td>时间</td>
+					</tr>
+					<!--内容栏-->
+					<tbody>
+						<tr>
+							<td class="col1">
+								<i class="sheng"></i>
+								起点合同事件
+							</td>
+							<td>12/60</td>
+							<td>阅文</td>
+							<td>2019/12/25</td>
+						</tr>
+						<tr>
+							<td class="col1">
+								<i class="meidao"></i>
+								不知道写点什么好
+							</td>
+							<td>12/160</td>
+							<td>作者</td>
+							<td>2019/11/20</td>
+						</tr>
+						<tr>
+							<td class="col1">
+								<i></i>
+								这可不算划水
+							</td>
+							<td>122/990</td>
+							<td>发四！</td>
+							<td>2019/12/10</td>
+						</tr>
+					</tbody>
+				</table>
+				<!--显示的拓展内容-->
+				<div id="discuss-total">
+					<div class="all_discuss">
+						共1个话题
+						浏览全部话题>>>
+					</div>
+					<div class="new_discuss" align="right">
+						有问题要与其他用户讨论
+						[发表帖子]
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+    <footer>
+        <section class="slogan">
+        <p>本网站由@三傻大闹官方提供服务，最终解释权由三傻大闹官方所有</p>
+    </section>
+    </footer>
+</body>
+</html>
