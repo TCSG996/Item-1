@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+}
+header ul {
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 100px;
+}
+h1 {
+    position: absolute;
+    left: 30px;
+    top: 0;
+    line-height: 85px;
+    background-image: url(ps/sansahgai.png);
+    background-position: center;
+    width: 330px;
+    text-indent: -9999px;
+}
+h1 {
+    color: white;
+}
+header li {
+    display: inline;
+    margin-right: 4vw;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+.menu {
+    display: none;
+}
+.news {
+    background-color: black;
+    color: white;
+    height: 85vh;
+    background-image: url(ps/he.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* 响应式设计语法 */
+@media screen  and (max-width: 1000px) {
+    header ul{
+        display:none;
+    } 
+    header h1 {
+        left:50%;
+        transform: translateX(-50%);
+    }
+    .menu {
+        display: block;
+        background-color: black;
+        color: white;
+        font-size: 35px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        border: none;
+        cursor: pointer;
+    }
+}
