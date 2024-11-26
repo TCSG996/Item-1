@@ -1,83 +1,83 @@
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 25px;
+    gap: 20px;
     padding: 20px 0;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 .gallery-item {
     position: relative;
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    aspect-ratio: 1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
 .gallery-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
 
 .gallery-item img {
     width: 100%;
-    height: 100%;
+    height: 200px;
     object-fit: cover;
-    display: block;
 }
 
 .gallery-upload {
-    background: #f8f9fa;
-    padding: 25px;
-    border-radius: 12px;
-    border: 2px dashed #dee2e6;
-    max-width: 600px;
-    margin: 0 auto 30px;
-    transition: all 0.3s ease;
+    margin-bottom: 20px;
 }
 
-.gallery-upload:hover {
-    border-color: #4a90e2;
-    background: #f0f4f8;
+.upload-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
-#imageUpload {
-    border: 1px solid #ddd;
-    padding: 12px;
+.upload-container input[type="file"] {
+    flex: 1;
+}
+
+/* Forum Styles */
+.post-form {
+    background-color: #f8f9fa;
+    padding: 20px;
     border-radius: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-/* 改进的图片悬停效果 */
-.gallery-item::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom, 
-        rgba(0,0,0,0.1), 
-        rgba(0,0,0,0.4));
-    opacity: 0;
-    transition: all 0.3s ease;
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
 }
 
-.gallery-item:hover::after {
-    opacity: 1;
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-/* 响应式调整 */
-@media (max-width: 768px) {
-    .gallery-container {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 15px;
-    }
-    
-    .gallery-upload {
-        padding: 15px;
-        margin: 0 15px 20px;
-    }
+.post-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    color: #666;
 } 
