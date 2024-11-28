@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="profile-image" data-aos="fade-down">
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <img src="your-image-path.jpg" alt="个人头像">
+                    </div>
+                </div>
+            </div>
+            <h1 class="animate-text" data-aos="fade-up">您的名字</h1>
+            <p class="subtitle animate-text" data-aos="fade-up" data-aos-delay="200">
+                <span class="typing">职位 / 头衔</span>
+            </p>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+        <div class="hero-shape"></div>
+    </header>
+
+    <main class="container">
+        <section id="about" class="about card" data-aos="fade-up">
+            <h2><i class="fas fa-user"></i> 关于我</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>在这里写一段简短的自我介绍。描述您的专业背景、兴趣爱好和目标。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills card" data-aos="fade-up">
+            <h2><i class="fas fa-code"></i> 专业技能</h2>
+            <ul class="skill-grid">
+                <li class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <span class="skill-name">HTML5</span>
+                    <div class="skill-level">
+                        <div class="progress" style="width: 90%"></div>
+                    </div>
+                </li>
+                <li class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                    <span class="skill-name">CSS3</span>
+                    <div class="skill-level">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </li>
+                <li class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-level">
+                        <div class="progress" style="width: 80%"></div>
+                    </div>
+                </li>
+                <li class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <span class="skill-name">React</span>
+                    <div class="skill-level">
+                        <div class="progress" style="width: 75%"></div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects card" data-aos="fade-up">
+            <h2><i class="fas fa-project-diagram"></i> 项目经历</h2>
+            <div class="project-grid">
+                <div class="project" data-aos="flip-left">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300x200" alt="项目预览">
+                    </div>
+                    <div class="project-content">
+                        <h3>项目名称 1</h3>
+                        <p>项目描述...</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="#" class="btn">了解更多 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project" data-aos="flip-right">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/300x200" alt="项目预览">
+                    </div>
+                    <div class="project-content">
+                        <h3>项目名称 2</h3>
+                        <p>项目描述...</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <a href="#" class="btn">了解更多 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact card" data-aos="fade-up">
+            <h2><i class="fas fa-envelope"></i> 联系方式</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card" data-aos="zoom-in">
+                        <i class="fas fa-envelope"></i>
+                        <h3>邮箱</h3>
+                        <p>your.email@example.com</p>
+                    </div>
+                    <div class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+                        <i class="fas fa-phone"></i>
+                        <h3>电话</h3>
+                        <p>+86 xxx xxxx xxxx</p>
+                    </div>
+                    <div class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>地址</h3>
+                        <p>城市，省份</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-btn" data-aos="zoom-in"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-btn" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-btn" data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-weibo"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <p>三傻大闹Web论坛是一个充满创意和激情的团队，致力于为用户提供最好的web体验。</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about"><i class="fas fa-angle-right"></i>关于我</a></li>
+                        <li><a href="#skills"><i class="fas fa-angle-right"></i>技能</a></li>
+                        <li><a href="#projects"><i class="fas fa-angle-right"></i>项目</a></li>
+                        <li><a href="#contact"><i class="fas fa-angle-right"></i>联系</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:example@email.com"><i class="fas fa-envelope"></i>example@email.com</a></li>
+                        <li><a href="tel:+1234567890"><i class="fas fa-phone"></i>+123 456 7890</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i>城市, 省份</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 三傻大闹Web论坛 | 保留所有权利</p>
+            </div>
+        </div>
+        <div class="footer-shape"></div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html> 
